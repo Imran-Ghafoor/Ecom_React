@@ -1,10 +1,8 @@
-import styled from "styled-components";
+import HeroSection from "../components/UI/HeroSection";
 
 export const Home = () => {
-  return <Wrapper className="test">Home</Wrapper>;
+  const data = {
+    name: "imran store",
+  };
+  return <HeroSection myData={data} />;
 };
-
-const Wrapper = styled.section`
-  background-color: ${({ theme }) => theme.colors.bg};
-  height: 100vh;
-`;
