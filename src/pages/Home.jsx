@@ -1,11 +1,17 @@
-import styled from "styled-components";
+// import HeroSection from "../components/UI/HeroSection";
+import HeroSection from "../components/UI/HeroSection";
+import Services from "../components/UI/Services";
+import Trusted from "../components/UI/Trusted";
 
 export const Home = () => {
-  return <Wrapper className="test">Home</Wrapper>;
+  const data = {
+    name: "imran store",
+  };
+  return (
+    <>
+      <HeroSection myData={data} />
+      <Services />
+      <Trusted />
+    </>
+  );
 };
-
-const Wrapper = styled.section`
-  background-color: ${({ theme }) => theme.colors.bg};
-  width: 20rem;
-  height: 20rem;
-`;
